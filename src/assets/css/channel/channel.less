@@ -1,0 +1,163 @@
+
+.channel_area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .operation_area {
+        position: relative;
+        height: 3rem;
+        width: 100%;
+        line-height: 3rem;
+
+        .el-input {
+            width: 13rem;
+            float: left;
+            margin-left: 1rem;
+
+            .el-input__inner {
+                height: 1.8rem !important;
+                line-height: 1.8rem !important;
+            }
+        }
+    }
+    .table_area {
+        position: relative;
+        height: calc(100% - 3rem);
+        width: 100%;
+    }
+}
+
+.title_text {
+    position: absolute;
+}
+
+.content_align {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_channel_ul {
+    width: 90%;
+    height: 100%;
+    .el-input {
+        display: inline-block;
+    }
+    .el-input__inner {
+        color: #fff;
+    }
+    .el-input__inner {
+        margin-left: 0 !important;
+    }
+
+    .close-btn {
+        position: absolute;
+        bottom: -100px;
+    }
+    input {
+        height: 3rem;
+        border: 1px solid @border_color;
+        border-radius: 5px;
+        background-color: rgba(15, 65, 111, 0.5);
+    }
+    li {
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        margin-bottom: 0.5rem;
+        .col_l {
+            width: 30%;
+            float: left;
+            text-align: right;
+        }
+
+        .col_r {
+            position: relative;
+            width: 69%;
+            float: left;
+        }
+    }
+}
+
+.small_dialog {
+    margin-right: 0;
+    width: auto;
+}
+
+.el-dialog {
+    position: relative;
+    background: url("../../images/dialog_bg.png") no-repeat;
+    background-size: 100% 100%;
+    .title_dialog {
+        position: absolute;
+        top: 0;
+        margin: 0 -25px;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        .title-bg{
+            margin-top: 2px;
+            background: url("../../images/dialog_title.png") no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &>span{
+                text-align: center;
+                width: 80%;
+                display: inline-block;
+                white-space:nowrap;        //强制换行（中英文有效）
+                overflow:hidden;           //隐藏超出的内容
+                text-overflow:ellipsis;    //超出的内容设置成省略号
+            }
+        }
+    }
+     .el-dialog__body {
+        color: #fff;
+        height: 100%;
+    }
+    .el-button {
+        width: 8rem;
+        background: rgba(62, 144, 199, 0.14);
+    }
+}
+
+.switch {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.switch_item {
+    position: relative;
+    width: 2.5rem;
+    cursor: pointer;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.switch_left {
+    float: right;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.switch_right {
+    float: left;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.switch_left_select {
+    background-color: rgb(7, 155, 255);
+    color: #ffffff;
+}
+
+.switch_right_select {
+    background-color: #ff9900;
+    color: #ffffff;
+}

@@ -1,0 +1,199 @@
+
+.operation_area_bottom {
+    border-bottom: 1px solid @long_divide_line;
+}
+
+.content_area {
+    position: relative;
+    height: calc(100% - 3.1rem);
+    //width: calc(100% - 1rem);
+    padding: 0 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .channel_item {
+        position: relative;
+        //height: 10rem;
+        padding-bottom: 0.5rem;
+        margin: 0.5rem 0.3rem 0;
+        width: calc(12.5% - 0.6rem - 2px);
+        background:rgba(0,147,245,0.14);
+        border: 1px solid #094b8e;
+        box-shadow: 0 0 15px #075AB6 inset;
+        float: left;
+        border-radius: 10px;
+
+        .item_title {
+            position: relative;
+            height: 2rem;
+            line-height: 2rem;
+            border-bottom: 1px solid #075AB6;
+            width: calc(100% - 1rem);
+            padding: 0 0.5rem;
+
+            span {
+                width: 80%;
+                white-space:nowrap;        //强制换行（中英文有效）
+                overflow:hidden;           //隐藏超出的内容
+                text-overflow:ellipsis;    //超出的内容设置成省略号
+                float: left;
+            }
+
+            .item_img {
+                cursor: pointer;
+                float: right;
+                height: 2rem;
+                line-height: 1.5rem;
+                vertical-align: middle;
+            }
+        }
+
+        .item_content {
+            position: relative;
+            height: calc(100% - 2rem);
+            width: calc(100% - 1rem);
+            padding: 0 0.5rem;
+
+            .switch{
+                height: 2.5rem;
+                line-height: 2.5rem;
+                text-align: center;
+                width: 100%;
+            }
+
+            .outPut_area {
+                position: relative;
+                height: calc(100% - 2.5rem);
+                width: 100%;
+
+                .outPut_item{
+                    margin-top: 0.2rem;
+                    position: relative;
+                    height: 100%;
+                    line-height: 100%;
+                    width: 33%;
+                    float: left;
+                    text-align: center;
+
+                    .status {
+                        height: 2rem;
+                        line-height: 2rem;
+                    }
+                    @media(max-width:1500px){
+                        .status {
+                            height: 1.3rem;
+                            line-height: 1.3rem;
+                        }
+                    }
+
+                    .outPut {
+                        position: relative;
+                        height: calc(100% - 2rem);
+
+                        img {
+                            cursor: pointer;
+                        }
+                        @media(max-width:1600px){
+                            img {
+                                margin-top: 0.3rem;
+                                width: 70%;
+                            }
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
+.channel_area_show_log {
+    height: calc(70% - 2rem);
+}
+.switchStyle .el-switch__label {
+  position: absolute;
+  display: none;
+  color: #fff;
+}
+.switchStyle .el-switch__label--left {
+  z-index: 9;
+  left: 6px;
+  top:0;
+}
+.switchStyle .el-switch__label--right {
+  z-index: 9;
+  top:0;
+  left: -14px;
+}
+.switchStyle .el-switch__label.is-active {
+  display: block;
+}
+.switchStyle.el-switch .el-switch__core,
+.el-switch .el-switch__label {
+  width: 60px !important;
+}
+.switchLog_area{
+    position: absolute;
+    height: 30%;
+    overflow: hidden;
+    margin:1.5rem 0.4rem 0;
+    z-index: 99900;
+}
+.channel_detail_area{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width:30%;
+    overflow: hidden;
+    bottom: 0;
+    z-index: 999900;
+}
+.show_detail{
+  width: 30%;
+}
+.hidden_detail{
+  width: 0%;
+}
+.detailBtn{
+  position: absolute;
+  z-index: 9999900;
+  bottom:calc(60% - 70px);
+  right:0;
+  height: 30px;
+  width: 15px;
+  padding: 0.5rem 0.1rem;
+  border-top: 1px solid #075AB6; 
+  border-left: 1px solid #075AB6; 
+  border-bottom: 1px solid #075AB6; 
+  border-radius: 0.3rem 0 0 0.3rem;
+  cursor: pointer;
+  background: rgb(12, 40, 73);
+}
+.detailBtn>img{
+    margin-top: 0.4rem;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.switchLogBtn {
+    position: absolute;
+    z-index: 999900;
+    bottom: 0%;
+    // left: calc(50% - 50px);
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    cursor: pointer;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    color: #ffffff;
+    background: @border_color;
+}
+
+
+.trans{
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}

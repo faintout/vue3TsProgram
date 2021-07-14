@@ -1,0 +1,30 @@
+{
+  "name": "smartswitch",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "buildTs": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit --skipLibCheck && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto-js": "^4.0.0",
+    "element-plus": "^1.0.2-beta.54",
+    "jquery": "^3.6.0",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.10"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "@types/node": "^16.0.1",
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "moment": "^2.29.1",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.0",
+    "vue-tsc": "^0.0.24"
+  }
+}

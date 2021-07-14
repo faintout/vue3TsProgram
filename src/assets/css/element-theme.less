@@ -1,0 +1,175 @@
+@font_color:#ff9900;
+//input
+.el-input__inner {
+    border: 1px solid @border_color;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    background: none;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    &::placeholder {
+        color: #154f85;
+    }
+}
+
+.el-input.is-disabled .el-input__inner {
+    background-color: #041647;
+    border-color: @border_color;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+.el-icon-search {
+    color: @border_color;
+}
+
+//表单
+.el-form-item {
+    height: 24%;
+    width: 100%;
+    margin-bottom: 0;
+}
+.el-form-item__label {
+    height: 100%;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0;
+    width: 8rem!important;
+}
+.el-form-item__content {
+    height: 100%;
+    width: 70%;
+    margin-left: 8rem!important;
+}
+.el-form-item__error {
+    width: 45%;
+    line-height: 1rem;
+    top: 15%;
+    left: 75%;
+}
+
+.el-scrollbar {
+    background: #fff;
+}
+.el-input__icon {
+    line-height: 20px;
+}
+//确认框
+.el-message-box {
+    border: none;
+    background: rgb(14, 47, 100);
+    .el-message-box__title,.el-message-box__content{
+    color: #fff;
+    }
+}
+.el-message-box__wrapper{
+    .el-button{
+        color: #fff;
+        border: 1px solid #0084ff;
+        border-radius: 0.5rem;
+   }
+    .el-button:hover {
+        background: rgb(52, 126, 204);
+    }
+   .el-button--default{
+        background: rgba(62, 144, 199, 0.14);
+   }
+   .el-button--primary{
+        background: rgb(52, 126, 204);
+   }
+}
+
+//element ui 复写样式
+//tabs标签
+.el-tabs{
+    height: 100%;
+}
+.el-tabs__header{
+    height: 5%;
+}
+.el-tabs__content{
+    height: 93%;
+}
+.el-tab-pane{
+    height: 100%;
+}
+.el-tabs__item {
+    font-size: 1.1rem;
+    margin: 3px 0;
+    color: #83CAFA;
+    &:hover{
+      color: #83CAFA;
+    }
+  }
+  .el-tabs__item.is-active {
+    color: #FFA800;
+  }
+  .el-tabs__nav-wrap::after{
+      background-color: #054887;
+  }
+  .el-tabs__nav{
+    margin-left: 20px;
+    transform: translateX(20px);
+  }
+  .el-tabs__active-bar {
+    background-color: @font_color;
+  }
+
+  //日期时间选择器
+  .el-picker-panel {
+    background: #041647;
+    border: 1px solid #041647;
+    color: #fff;
+    .el-date-table th{
+        color: #fff;
+    }
+    .el-date-table td.in-range div,
+    .el-date-table td.in-range div:hover, 
+    .el-date-table.is-week-mode .el-date-table__row.current div, 
+    .el-date-table.is-week-mode .el-date-table__row:hover div{
+        color: #666;
+    }
+    .el-icon-d-arrow-left,.el-icon-arrow-left,.el-icon-d-arrow-right,.el-icon-arrow-right{
+        color: #fff;
+    }
+    .el-date-table td.end-date span, .el-date-table td.start-date span{
+        color: #fff;
+    }
+ }
+ .el-range__close-icon{
+    line-height: 1.3rem!important;
+ }
+ .el-range-input{
+    font-size: 1rem!important;
+}
+.el-range__icon{
+    line-height: 1.3rem!important;
+}
+
+.el-dialog--center{
+    text-align: left;
+}
+.dialog-footer{
+    display: flex;
+    justify-content: center;
+}
+.el-dialog__headerbtn{
+    z-index: 2222;
+    font-size:23px;
+    right: 32px;
+    font-weight: 500;
+    &>.el-dialog__close{
+        color: #fff;
+    }
+}
+
+
+//loding
+.el-icon-loading{
+    font-size: 3rem;
+}
+.el-loading-spinner .el-loading-text{
+    font-size: 1.1rem;
+}
